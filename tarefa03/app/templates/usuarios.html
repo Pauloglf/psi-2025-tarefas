@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+</head>
+<body>
+    <a href="/tarefa03/app/templates/index.html">Página principal</a>
+    <h1>Usuários: </h1>
+    {% for usu in dados_usuarios %}
+        <p>Nome: {{ usu.Nome }}</p>
+        <p>Matrícula: {{ usu.Matrícula }}</p>
+        <p>Idade: {{ usu.Idade }}</p>
+        <p>Cidade: {{ usu.Cidade }}</p>
+    {% endfor %}
+</body>
+</html>
